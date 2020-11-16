@@ -74,16 +74,17 @@ def adjust_results4_isadog(results_dic, dogfile):
     """
     dognames_dic = {}
     #Open the dogfile
-    f = open(dogfile)
+    dogs_object = open(dogfile)
     #Read tgrough the lines
-    v = f.readlines()
+    dog_file_names = dogs_object.readlines()
+
     #Looping through the dictionary with dognames and then use conditional to append the dogname if nor in dognames_dic 
-    for m in v:
+    for key in dog_file_names:
         #print(m.rstrip("\n"))
-        if m.strip("\n") in dognames_dic:
-            print("Warning! The key or name " + m.strip("\n") + " already exists")
+        if key.strip("\n") in dognames_dic:
+            print("Warning! The key or name " + key.strip("\n") + " already exists")
         else:
-            dognames_dic[m.strip("\n")] = 1
+            dognames_dic[key.strip("\n")] = 1
     
     
     #Looping through the results_dic data structure and then determin ing the matches
