@@ -67,17 +67,26 @@ def adjust_results4_isadog(results_dic, dogfile):
     Returns:
            None - results_dic is mutable data type so no return needed.
     """ 
+    
+    """
+    The code has been refactored due to issues with the print_functions_for_lab_checks.py,i.e. Zero Division Error Issues.
+    The the code implementation which has been refactored for this is in adjust_results4_isadog_hints.py
+    """
     dognames_dic = {}
+    #Open the dogfile
     f = open(dogfile)
+    #Read tgrough the lines
     v = f.readlines()
+    #Looping through the dictionary with dognames and then use conditional to append the dogname if nor in dognames_dic 
     for m in v:
         #print(m.rstrip("\n"))
-        if m.rstrip("\n") in dognames_dic:
-            print("Warning! The key or name " + m.rstrip("\n") + " already exists")
+        if m.strip("\n") in dognames_dic:
+            print("Warning! The key or name " + m.strip("\n") + " already exists")
         else:
-            dognames_dic[m.rstrip("\n")] = 1
+            dognames_dic[m.strip("\n")] = 1
     
     
+    #Looping through the results_dic data structure and then determin ing the matches
     #for i in range(0,len(results_dic),1):
     for i in results_dic:
         #print(results_dic[i][1])

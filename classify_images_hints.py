@@ -89,7 +89,8 @@ def classify_images(images_dir, results_dic, model):
        #
        # Processes the results so they can be compared with pet image labels
        # set labels to lowercase (lower) and stripping off whitespace(strip)
-       pass
+       #pass
+        model_label = classifier( str(images_dir + "/" + key).strip().lower(), model)
               
        # defines truth as pet image label 
        truth = results_dic[key][0]
@@ -104,7 +105,9 @@ def classify_images(images_dir, results_dic, model):
        # as an exact match to on of the terms in the list - then they are added to 
        # results_dic as an exact match(1) using extend list function
        if truth in model_label:
-           pass
+           #pass
+           results_dic[key].extend([model_label,1])
+           
 
        # TODO: 3d. REPLACE pass BELOW with CODE that uses the extend list function
        #           to add the classifier label (model_label) and the value of
@@ -115,4 +118,5 @@ def classify_images(images_dir, results_dic, model):
        # if not found then added to results dictionary as NOT a match(0) using
        # the extend function 
        else:
-           pass
+           #pass
+           results_dic[key].extend([model_label,0])

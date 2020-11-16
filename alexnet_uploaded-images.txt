@@ -5,58 +5,58 @@ Command Line Arguments:
 
 Pet Image Label Dictionary has 4 key-value pairs.
 Below are 4 of them:
- 1 key:                     Dog_02.jpg  label:                        Dog
- 2 key:              Coffee_mug_01.jpg  label:                 Coffee mug
- 3 key:                 Rabbit_002.jpg  label:                     Rabbit
- 4 key:                     Dog_01.jpg  label:                        Dog
+ 1 key:                     Dog_02.jpg  label:                        dog
+ 2 key:              Coffee_mug_01.jpg  label:                     coffee
+ 3 key:                 Rabbit_002.jpg  label:                     rabbit
+ 4 key:                     Dog_01.jpg  label:                        dog
 
      MATCH:
+
+                Rabbit_002.jpg: 
+Real:                     rabbit   Classifier: wood rabbit, cottontail, cottontail rabbit, rabbit
 
  NOT A MATCH:
 
                     Dog_02.jpg: 
-Real:                        dog   Classifier:             tench, tinca tinca
+Real:                        dog   Classifier:                      Chihuahua
 
              Coffee_mug_01.jpg: 
-Real:                 coffee mug   Classifier:    goldfish, carassius auratus
-
-                Rabbit_002.jpg: 
-Real:                     rabbit   Classifier: great white shark, white shark, man-eater, man-eating shark, carcharodon carcharias
+Real:                     coffee   Classifier:                            cup
 
                     Dog_01.jpg: 
-Real:                        dog   Classifier: tiger shark, galeocerdo cuvieri
+Real:                        dog   Classifier:               golden retriever
 
-# Total Images 4 # Matches: 0 # NOT Matches: 4
+# Total Images 4 # Matches: 1 # NOT Matches: 3
 
      MATCH:
+
+                Rabbit_002.jpg: 
+Real:                     rabbit   Classifier: wood rabbit, cottontail, cottontail rabbit, rabbit  
+PetLabelDog: 0  ClassLabelDog: 0
 
  NOT A MATCH:
 
                     Dog_02.jpg: 
-Real:                        dog   Classifier:             tench, tinca tinca  
+Real:                        dog   Classifier:                      Chihuahua  
 PetLabelDog: 1  ClassLabelDog: 0
 
              Coffee_mug_01.jpg: 
-Real:                 coffee mug   Classifier:    goldfish, carassius auratus  
-PetLabelDog: 0  ClassLabelDog: 0
-
-                Rabbit_002.jpg: 
-Real:                     rabbit   Classifier: great white shark, white shark, man-eater, man-eating shark, carcharodon carcharias  
+Real:                     coffee   Classifier:                            cup  
 PetLabelDog: 0  ClassLabelDog: 0
 
                     Dog_01.jpg: 
-Real:                        dog   Classifier: tiger shark, galeocerdo cuvieri  
-PetLabelDog: 1  ClassLabelDog: 0
+Real:                        dog   Classifier:               golden retriever  
+PetLabelDog: 1  ClassLabelDog: 1
 
-# Total Images 4 # Matches: 0 # NOT Matches: 4
+# Total Images 4 # Matches: 1 # NOT Matches: 3
 
  ** Statistics from calculates_results_stats() function:
 N Images:  4  N Dog Images:  2  N NotDog Images:  2 
-Pct Corr dog:   0.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:   0.0
+Pct Corr dog:  50.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:   0.0
 
  ** Check Statistics - calculated from this function as a check:
 N Images:  4  N Dog Images:  2  N NotDog Images:  2 
-Pct Corr dog:   0.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:   0.0
+Pct Corr dog:  50.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:   0.0
 
 
 *** Results Summary for CNN Model Architecture ALEXNET ***
@@ -64,11 +64,15 @@ N Images            :   4
 N Dog Images        :   2
 N Not-Dog Images    :   2
 Printing summary statictics(percentage) on model run
-pct_match 0.0
-pct_correct_dogs 0.0
+pct_match 25.0
+pct_correct_dogs 50.0
 pct_correct_breed 0.0
 pct_correct_notdogs 100.0
 
 INCORRECT Dog/NOT Dog Assignments:
+Pet Label =  dog Classifier Label=  golden retriever
+
+INCORRECT Dog Breed Assignment:
+Real:                        dog   Classifier:               golden retriever
 
 ** Total Elapsed Runtime: 0:59:59

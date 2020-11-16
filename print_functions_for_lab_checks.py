@@ -293,6 +293,7 @@ def check_calculating_results(results_dic, results_stats_dic):
                     
         # calculates statistics based upon counters from above
         n_pet_notd = n_images - n_pet_dog
+        #Altered the line below due to zero division error
         pct_corr_dog = ( n_class_cdog / n_pet_dog )*100
         pct_corr_notdog = ( n_class_cnotd / n_pet_notd )*100
         pct_corr_breed = ( n_match_breed / n_pet_dog )*100
