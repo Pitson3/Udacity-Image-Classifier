@@ -6,14 +6,14 @@ Command Line Arguments:
 Pet Image Label Dictionary has 4 key-value pairs.
 Below are 4 of them:
  1 key:                     Dog_02.jpg  label:                        dog
- 2 key:              Coffee_mug_01.jpg  label:                     coffee
+ 2 key:              Coffee_mug_01.jpg  label:                 coffee mug
  3 key:                 Rabbit_002.jpg  label:                     rabbit
  4 key:                     Dog_01.jpg  label:                        dog
 
      MATCH:
 
              Coffee_mug_01.jpg: 
-Real:                     coffee   Classifier:                     coffee mug
+Real:                 coffee mug   Classifier:                     coffee mug
 
                 Rabbit_002.jpg: 
 Real:                     rabbit   Classifier: wood rabbit, cottontail, cottontail rabbit, rabbit
@@ -31,7 +31,7 @@ Real:                        dog   Classifier:               golden retriever
      MATCH:
 
              Coffee_mug_01.jpg: 
-Real:                     coffee   Classifier:                     coffee mug  
+Real:                 coffee mug   Classifier:                     coffee mug  
 PetLabelDog: 0  ClassLabelDog: 0
 
                 Rabbit_002.jpg: 

@@ -4,7 +4,7 @@
 #                                                                             
 # PROGRAMMER: Pitson Mwakabila
 # DATE CREATED: 08/11/2020                                 
-# REVISED DATE: 16/11/2020
+# REVISED DATE: 17/11/2020
 # PURPOSE: Create the function get_pet_labels that creates the pet labels from 
 #          the image's filename. This function inputs: 
 #           - The Image Folder as image_dir within get_pet_labels function and 
@@ -105,7 +105,7 @@ def get_pet_labels(image_dir):
         if in_files[idx][0] != ".":
            
             # Creates temporary label variable to hold pet label name extracted 
-            pet_label = ""
+            pet_label = " "
 
             # TODO: 2a. BELOW REPLACE pass with CODE that will process each 
             #          filename in the in_files list to extract the dog breed 
@@ -114,9 +114,9 @@ def get_pet_labels(image_dir):
             #          extracted dog breed name in the variable pet_label 
             #          that's created as an empty string ABOVE
             #pass
-            #pet_label = " ".join(in_files[idx].split("_")[0].strip().lower())
-            pet_label = in_files[idx].split("_")[0].strip().lower()
-
+            #Split the in_files[idx] list and then convert the list to string and remove whitespaces to the end of the string while converting to lowercase
+            pet_label = pet_label.join(in_files[idx].split("_")[:-1]).lower().strip()
+            
             # If filename doesn't already exist in dictionary add it and it's
             # pet label - otherwise print an error message because indicates 
             # duplicate files (filenames)
