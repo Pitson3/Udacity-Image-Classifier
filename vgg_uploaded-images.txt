@@ -21,7 +21,7 @@ Real:                     rabbit   Classifier: wood rabbit, cottontail, cottonta
  NOT A MATCH:
 
                     Dog_02.jpg: 
-Real:                        dog   Classifier:           Afghan hound, Afghan
+Real:                        dog   Classifier:           afghan hound, afghan
 
                     Dog_01.jpg: 
 Real:                        dog   Classifier:               golden retriever
@@ -41,8 +41,8 @@ PetLabelDog: 0  ClassLabelDog: 0
  NOT A MATCH:
 
                     Dog_02.jpg: 
-Real:                        dog   Classifier:           Afghan hound, Afghan  
-PetLabelDog: 1  ClassLabelDog: 0
+Real:                        dog   Classifier:           afghan hound, afghan  
+PetLabelDog: 1  ClassLabelDog: 1
 
                     Dog_01.jpg: 
 Real:                        dog   Classifier:               golden retriever  
@@ -52,11 +52,11 @@ PetLabelDog: 1  ClassLabelDog: 1
 
  ** Statistics from calculates_results_stats() function:
 N Images:  4  N Dog Images:  2  N NotDog Images:  2 
-Pct Corr dog:  50.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:   0.0
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:   0.0
 
  ** Check Statistics - calculated from this function as a check:
 N Images:  4  N Dog Images:  2  N NotDog Images:  2 
-Pct Corr dog:  50.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:   0.0
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:   0.0
 
 
 *** Results Summary for CNN Model Architecture VGG ***
@@ -65,14 +65,12 @@ N Dog Images        :   2
 N Not-Dog Images    :   2
 Printing summary statictics(percentage) on model run
 pct_match 50.0
-pct_correct_dogs 50.0
+pct_correct_dogs 100.0
 pct_correct_breed 0.0
 pct_correct_notdogs 100.0
 
-INCORRECT Dog/NOT Dog Assignments:
-Pet Label =  dog Classifier Label=  golden retriever
-
 INCORRECT Dog Breed Assignment:
+Real:                        dog   Classifier:           afghan hound, afghan
 Real:                        dog   Classifier:               golden retriever
 
 ** Total Elapsed Runtime: 0:59:56

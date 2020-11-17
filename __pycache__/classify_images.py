@@ -4,7 +4,7 @@
 #                                                                             
 # PROGRAMMER: Pitson Mwakabila
 # DATE CREATED: 10/11/2020                                
-# REVISED DATE: 17/11/2020
+# REVISED DATE: 16/11/2020
 # PURPOSE: Create a function classify_images that uses the classifier function 
 #          to create the classifier labels and then compares the classifier 
 #          labels to the pet image labels. This function inputs:
@@ -201,14 +201,11 @@ def classify_images(images_dir, results_dic, model):
         # Processes the results so they can be compared with pet image labels
         # set labels to lowercase (lower) and stripping off whitespace(strip)
         #pass
-        model_label = classifier(images_dir + key, model).lower().strip()
-        
-        
+        model_label = classifier(images_dir + key, model)
+              
         # defines truth as pet image label 
         truth = results_dic[key][0]
-        
-        #print("Truth", truth)
-        #print("Model Label",model_label)
+
         # TODO: 3c. REPLACE pass BELOW with CODE that uses the extend list function
         #           to add the classifier label (model_label) and the value of
         #           1 (where the value of 1 indicates a match between pet image 
@@ -218,9 +215,9 @@ def classify_images(images_dir, results_dic, model):
         # If the pet image label is found within the classifier label list of terms 
         # as an exact match to on of the terms in the list - then they are added to 
         # results_dic as an exact match(1) using extend list function
-        if truth in model_label:
+        if truth in model_label.strip().lower():
             #pass
-            results_dic[key].extend([model_label,1])
+            results_dic[key].extend([model_label.strip().lower(),1])
            
 
         # TODO: 3d. REPLACE pass BELOW with CODE that uses the extend list function
@@ -233,7 +230,7 @@ def classify_images(images_dir, results_dic, model):
         # the extend function 
         else:
             #pass
-            results_dic[key].extend([model_label,0])
+            results_dic[key].extend([model_label.strip().lower(),0])
 
-    #print(results_dic)
+     #print(results_dic)
     None 

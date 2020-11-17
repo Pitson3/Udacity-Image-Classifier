@@ -21,7 +21,7 @@ Real:                     rabbit   Classifier: wood rabbit, cottontail, cottonta
  NOT A MATCH:
 
                     Dog_02.jpg: 
-Real:                        dog   Classifier:          gibbon, Hylobates lar
+Real:                        dog   Classifier:          gibbon, hylobates lar
 
                     Dog_01.jpg: 
 Real:                        dog   Classifier:               golden retriever
@@ -41,7 +41,7 @@ PetLabelDog: 0  ClassLabelDog: 0
  NOT A MATCH:
 
                     Dog_02.jpg: 
-Real:                        dog   Classifier:          gibbon, Hylobates lar  
+Real:                        dog   Classifier:          gibbon, hylobates lar  
 PetLabelDog: 1  ClassLabelDog: 0
 
                     Dog_01.jpg: 
