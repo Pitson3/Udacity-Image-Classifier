@@ -73,4 +73,4 @@ INCORRECT Dog Breed Assignment:
 Real:                        dog   Classifier:                      chihuahua
 Real:                        dog   Classifier:               golden retriever
 
-** Total Elapsed Runtime: 0:59:59
+** Total Elapsed Runtime: 0:0:0

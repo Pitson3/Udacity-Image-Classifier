@@ -335,4 +335,4 @@ Real:                     beagle   Classifier:  walker hound, walker foxhound
 Real:                     beagle   Classifier:               english foxhound
 Real:           golden retriever   Classifier:           afghan hound, afghan
 
-** Total Elapsed Runtime: 0:59:56
+** Total Elapsed Runtime: 0:0:3

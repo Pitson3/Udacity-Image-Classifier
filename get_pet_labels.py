@@ -4,7 +4,7 @@
 #                                                                             
 # PROGRAMMER: Pitson Mwakabila
 # DATE CREATED: 08/11/2020                                 
-# REVISED DATE: 17/11/2020
+# REVISED DATE: 18/11/2020
 # PURPOSE: Create the function get_pet_labels that creates the pet labels from 
 #          the image's filename. This function inputs: 
 #           - The Image Folder as image_dir within get_pet_labels function and 
@@ -17,7 +17,10 @@
 #
 ##
 # Imports python modules
-from os import listdir
+"""
+NOTE: Introduced the path module for a more generalized extraction of pet image labels from the file with a .jpg extension as suggeted by the previous reviewer
+"""
+from os import listdir,path
 
 # TODO 2: Define get_pet_labels function below please be certain to replace None
 #       in the return statement with results_dic dictionary that you create 
@@ -115,7 +118,13 @@ def get_pet_labels(image_dir):
             #          that's created as an empty string ABOVE
             #pass
             #Split the in_files[idx] list and then convert the list to string and remove whitespaces to the end of the string while converting to lowercase
-            pet_label = pet_label.join(in_files[idx].split("_")[:-1]).lower().strip()
+            splited_root_ext = path.splitext(in_files[idx])
+            
+            #Conditiobal statement for assigning the splited list values and then append the results to pet_label
+            if type(splited_root_ext[0])!='str' and len(splited_root_ext[0])!=1:
+                pet_label = pet_label.join(splited_root_ext[0].split("_")[:-1]).lower().strip()
+            else:
+                 pet_label = pet_label.join(splited_root_ext[0]).lower().strip()
             
             # If filename doesn't already exist in dictionary add it and it's
             # pet label - otherwise print an error message because indicates 

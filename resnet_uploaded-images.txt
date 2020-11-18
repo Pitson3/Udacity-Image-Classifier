@@ -70,9 +70,9 @@ pct_correct_breed 0.0
 pct_correct_notdogs 100.0
 
 INCORRECT Dog/NOT Dog Assignments:
-Pet Label =  dog Classifier Label=  golden retriever
+Pet Label =  dog Classifier Label=  gibbon, hylobates lar
 
 INCORRECT Dog Breed Assignment:
 Real:                        dog   Classifier:               golden retriever
 
-** Total Elapsed Runtime: 0:59:59
+** Total Elapsed Runtime: 0:0:0

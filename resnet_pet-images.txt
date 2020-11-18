@@ -328,40 +328,11 @@ pct_correct_breed 90.0
 pct_correct_notdogs 90.0
 
 INCORRECT Dog/NOT Dog Assignments:
-Pet Label =  dalmatian Classifier Label=  dalmatian, coach dog, carriage dog
-Pet Label =  basset hound Classifier Label=  basset, basset hound
-Pet Label =  poodle Classifier Label=  standard poodle, poodle
-Pet Label =  golden retriever Classifier Label=  leonberg
-Pet Label =  golden retriever Classifier Label=  golden retriever
-Pet Label =  great pyrenees Classifier Label=  kuvasz
-Pet Label =  great dane Classifier Label=  great dane
-Pet Label =  saint bernard Classifier Label=  saint bernard, st bernard
-Pet Label =  golden retriever Classifier Label=  golden retriever
-Pet Label =  boxer Classifier Label=  boxer
-Pet Label =  basenji Classifier Label=  basenji
-Pet Label =  boston terrier Classifier Label=  boston bull, boston terrier
-Pet Label =  beagle Classifier Label=  walker hound, walker foxhound
-Pet Label =  german shepherd dog Classifier Label=  german shepherd, german shepherd dog, german police dog, alsatian
-Pet Label =  dalmatian Classifier Label=  dalmatian, coach dog, carriage dog
-Pet Label =  german shepherd dog Classifier Label=  german shepherd, german shepherd dog, german police dog, alsatian
-Pet Label =  boston terrier Classifier Label=  boston bull, boston terrier
-Pet Label =  german shorthaired pointer Classifier Label=  german shorthaired pointer
-Pet Label =  beagle Classifier Label=  beagle
-Pet Label =  saint bernard Classifier Label=  saint bernard, st bernard
-Pet Label =  beagle Classifier Label=  beagle
-Pet Label =  great pyrenees Classifier Label=  great pyrenees
-Pet Label =  cocker spaniel Classifier Label=  cocker spaniel, english cocker spaniel, cocker
-Pet Label =  basenji Classifier Label=  basenji
-Pet Label =  dalmatian Classifier Label=  dalmatian, coach dog, carriage dog
-Pet Label =  golden retriever Classifier Label=  golden retriever
-Pet Label =  miniature schnauzer Classifier Label=  miniature schnauzer
-Pet Label =  poodle Classifier Label=  standard poodle, poodle
-Pet Label =  boston terrier Classifier Label=  boston bull, boston terrier
-Pet Label =  collie Classifier Label=  collie
+Pet Label =  cat Classifier Label=  norwegian elkhound, elkhound
 
 INCORRECT Dog Breed Assignment:
 Real:           golden retriever   Classifier:                       leonberg
 Real:             great pyrenees   Classifier:                         kuvasz
 Real:                     beagle   Classifier:  walker hound, walker foxhound
 
-** Total Elapsed Runtime: 0:59:54
+** Total Elapsed Runtime: 0:0:5
